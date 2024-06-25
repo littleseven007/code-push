@@ -124,7 +124,7 @@ export class AcquisitionManager {
                 callback(error, /*remotePackage=*/ null);
                 return;
             } else if (updateInfo.update_app_version) {
-                callback(/*error=*/ null, { updateAppVersion: true, appVersion: updateInfo.target_binary_range });
+                callback(/*error=*/ null, { updateAppVersion: true, appVersion: updateInfo.target_binary_range, downloadUrl: updateInfo.download_url });
                 return;
             } else if (!updateInfo.is_available) {
                 callback(/*error=*/ null, /*remotePackage=*/ null);

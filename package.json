@@ -1,5 +1,5 @@
 {
-  "name": "code-push",
+  "name": "@littleseven/code-push",
   "version": "4.2.1",
   "description": "Management SDK for the CodePush service",
   "main": "script/index.js",
@@ -15,6 +15,9 @@
     "test": "npm run build && mocha --recursive bin/test",
     "test:debugger": "mocha --recursive --inspect-brk=0.0.0.0 bin/test",
     "content": "shx cp {README.md,package.json,.npmignore} bin"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
